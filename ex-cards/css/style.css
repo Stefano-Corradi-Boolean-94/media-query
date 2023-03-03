@@ -1,0 +1,28 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+img{
+  max-width: 100%;
+}
+
+.card{
+  padding: 20px;
+}
+
+@media screen and (min-width:780px){
+  .containter .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .containter .row .card{
+    width: 50%;
+  }
+}
+
+@media screen and (min-width:1024px){
+  .containter .row .card{
+    width: 25%;
+  }
+}

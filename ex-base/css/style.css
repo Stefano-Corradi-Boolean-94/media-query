@@ -1,0 +1,28 @@
+
+
+/************** approccio mobile first ************/
+/* body{
+  background-color: brown;
+}
+
+@media screen and (min-width: 480px) {
+  
+  body {
+      background-color: lightgreen;
+  }
+
+} */
+
+/************** approccio desktop first ************/
+
+body{
+  background-color: lightgreen;
+}
+/* le media quesry devono essere sempre dopo l'istruzione di default */
+@media screen and (max-width: 479px) {
+  
+  body {
+      background-color: brown;
+  }
+
+}

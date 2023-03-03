@@ -1,0 +1,161 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding-bottom: 100px;
+}
+
+.container{
+  max-width: 60%;
+  margin: 30px auto;
+  border: 3px solid blue;
+}
+
+.container-big{
+  max-width: 95%;
+}
+
+/* slide 15  */
+.test-1 .box{
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  margin: 20px;
+}
+
+@media screen and (min-width: 479px){
+  .test-1{
+    display: flex;
+  }
+  .test-1 .box{
+    background-color: green;
+    margin-right: 0;
+  }
+}
+
+/* slide 16  */
+.container-big{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.test-2 img{
+  width: 200px;
+  border: 1px solid red;
+  margin: 10px;
+}
+
+@media screen and (max-width: 780px){
+  .container-big{
+    max-width: 550px;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width:568px){
+  .container-big{
+    max-width: 95%;
+    flex-direction: column;
+  }
+}
+
+/* slide 17  */
+.test-3 .box{
+  background-color: blue;
+  width: 150px;
+  height: 150px;
+  margin: 20px;
+}
+
+@media screen and (max-width:479px){
+  .test-3 .box{
+    border-radius: 50%;
+  }
+}
+
+/* slide 18  */
+
+.test-4{
+  height: 400px;
+  background-color: blue;
+  margin: 30px 0;
+}
+
+@media screen and (max-width:479px) {
+  .test-4{
+    background-color: green;
+  }
+}
+
+@media screen and (min-width:1441px) {
+  .test-4{
+    background-color: red;
+  }
+}
+
+/* slide 19  */
+
+.test-5{
+  margin-left: 30px;
+}
+
+.test-5 a{
+  text-decoration: none;
+}
+
+@media screen and (min-width:780px) {
+  .test-5 ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+  }
+  .test-5 ul li{
+    margin: 0 5px;
+    background-color: gray;
+    padding: 5px 20px;
+  }
+  .test-5 ul li a{
+    color: white;
+
+  }
+}
+
+/* slide 20 */
+.test-6 {
+  height: 400px;
+  background-color: blue;
+  margin: 30px 0;
+}
+
+.test-6 .box .inner{
+  display: none;
+}
+
+@media screen and (min-width:580px){
+  .test-6 .box{
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+  }
+  
+  .test-6 .box .inner{
+    display: flex;
+    background-color: green;
+    width: 60%;
+    height: 100%;
+  }
+  
+  .test-6 .box .inner .child{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    margin: 20px;
+  }
+}
+
